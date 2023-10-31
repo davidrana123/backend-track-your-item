@@ -24,12 +24,10 @@ app.use('/secure', secureRoutes);
 const PORT = process.env.PORT || "8080";
 const URL = process.env.DATABASE;
 
+// console.log('URL',URL)
+
 mongoose
-  .connect(URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-  })
+  .connect(URL)
   .then(() => {
     app.listen(PORT, () => console.log(`Server is running on PORT: ${PORT}`));
   })
