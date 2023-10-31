@@ -10,7 +10,7 @@
     "build": "babel src -d dist"
   },
   "engines": {
-    "node": "20.9.0"
+    "node": "19.0.0"
   },
   "author": "",
   "license": "ISC",
